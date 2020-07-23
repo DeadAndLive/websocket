@@ -199,7 +199,7 @@
 	<script src="assets/js/self.js"></script>
 	<script src="assets/js/loginout.js"></script>
 	<script>
-		let loginState = new WebSocket("ws://123.57.19.35:9814/loginStateService");
+		let loginState = new WebSocket("wss://123.57.19.35:9814/loginStateService");
 		$(document).ready(function() {
 			loginState.onmessage = function(e) {
 				if (e.data != 10) {
