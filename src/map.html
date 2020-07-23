@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>海外疫情分布图</title>
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/ready.css">
+		<link rel="stylesheet" href="assets/css/demo.css">
+		<link rel="stylesheet" href="assets/css/self.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main-header">
+				<div class="logo-header">
+					<a href="index.html" class="logo">
+						AdminManager
+					</a>
+					<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse"
+					 aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+				</div>
+				<nav class="navbar navbar-header navbar-expand-lg">
+					<div class="container-fluid">
+						<form class="navbar-left navbar-form nav-search mr-md-3" action="">
+							<div class="input-group">
+								<input type="text" placeholder="Search ..." class="form-control">
+								<div class="input-group-append">
+									<span class="input-group-text">
+										<i class="la la-search search-icon"></i>
+									</span>
+								</div>
+							</div>
+						</form>
+						<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+							<li class="nav-item dropdown">
+								<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="assets/img/profile.jpg"
+									 alt="user-img" width="36" class="img-circle"><span>admin</span></span> </a>
+								<ul class="dropdown-menu dropdown-user">
+									<li>
+										<div class="user-box">
+											<div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
+											<div class="u-text">
+												<h4>admin</h4>
+												<p class="text-muted">管理员</p>
+											</div>
+										</div>
+									</li>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="profile.html"><i class="ti-user"></i>个人信息</a>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="sidebar">
+				<div class="scrollbar-inner sidebar-wrapper">
+					<div class="user">
+						<div class="photo">
+							<img src="assets/img/profile.jpg">
+						</div>
+						<div class="info">
+							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									admin
+									<span class="user-level">管理员</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+								<ul class="nav">
+									<li>
+										<a href="login.html" class="loginOut">
+											<span class="link-collapse">退出登录</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="index.html">
+								<i class="la la-medkit" style="color: blueviolet;"></i>
+								<p>海外疫情总览</p>
+								<span class="badge badge-count xzqz text-danger"></span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="map.html">
+								<i class="la la-maxcdn" style="color: blueviolet;"></i>
+								<p>海外疫情分布图</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="table.html">
+								<i class="la la-area-chart" style="color: blueviolet;"></i>
+								<p>海外疫情详情表</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="today.html">
+								<i class="la la-calendar" style="color: blueviolet;"></i>
+								<p>历史今日</p>
+								<span class="badge badge-count today text-danger"></span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=JEBBRUBFSkBITVJBZEJLXElFTUgKR0tJ" style="text-decoration:none;">
+								<i class="la la-gittip" style="color: deeppink;"></i>
+								<p>意见反馈</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-panel">
+				<div class="content">
+					<div class="container-fluid">
+						<h4 class="page-title">新冠肺炎疫情-分布图</h4>
+						<p>数据来源：<a href="https://news.qq.com/zt2020/page/feiyan.htm#/global">腾讯</a> </p>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">海外疫情分布详情</h4>
+										<p>累计确诊</p>
+										<div class="row">
+											<div class="col-md-9">
+												<p></p>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-1"></div>
+														<span style="font-size: 10px;" class="text-left">&gt;10W</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-2"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;5W</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-3"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;3W</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-4"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;1W</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-5"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;5000</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-6"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;3000</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-7"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;1000</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-8"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;500</span>
+													</div>
+												</div>
+												<div class="card pull-left">
+													<div class="card-body">
+														<div class="color-box col-4 lever-9"></div>
+														<span style="font-size: 10px;" class="text-center">&gt;200</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 pull-right">
+												<div class="card card-stats card-danger btn-round">
+													<div class="card-body">
+														<div class="row">
+															<div class="col-5">
+																<div class="icon-big text-center text-info">
+																	<i class="la la-university"></i>
+																</div>
+															</div>
+															<div class="col-7 d-flex align-items-center">
+																<div class="numbers">
+																	<p class="card-category">今日新增最多国家</p>
+																	<h4 class="card-title" id="xzgj"></h4>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="mapcontainer">
+											<div class="map">
+												<span>Alternative content for the map</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="copyright mx-auto text-center">
+							<span>Copyright © 2020 <a href="">DeadAndLive</a>. All rights reserved.</span>
+							<div>
+								<span>公安备案号： </span>
+								<strong><a class="text-muted" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52050202001406">52050202001406</a></strong>
+								<span>互联网ICP备案： </span>
+								<strong><a class="text-muted" href="http://www.beian.miit.gov.cn/">黔ICP备20003551号</a></strong>
+							</div>	
+						 </div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+	<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+	<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+	<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+	<script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
+	<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
+	<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+	<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="assets/js/ready.min.js"></script>
+	<script src="assets/js/demo.js"></script>
+	<script src="assets/js/self.js"></script>
+	<script src="assets/js/loginout.js"></script>
+	<script>
+		let loginState = new WebSocket("ws://123.57.19.35:9814/loginStateService");
+		$(document).ready(function() {
+			loginState.onmessage = function(e) {
+				if (e.data != 10) {
+					//未登录重定向到login
+					window.location.replace("login.html");
+				}
+			};
+		});
+	</script>
+</html>

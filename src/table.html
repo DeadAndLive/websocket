@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>海外疫情详情表</title>
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/ready.css">
+		<link rel="stylesheet" href="assets/css/demo.css">
+		<link rel="stylesheet" href="assets/css/self.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main-header">
+				<div class="logo-header">
+					<a href="index.html" class="logo">
+						AdminManager
+					</a>
+					<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse"
+					 aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+				</div>
+				<nav class="navbar navbar-header navbar-expand-lg">
+					<div class="container-fluid">
+						<form class="navbar-left navbar-form nav-search mr-md-3" action="">
+							<div class="input-group">
+								<input type="text" placeholder="Search ..." class="form-control">
+								<div class="input-group-append">
+									<span class="input-group-text">
+										<i class="la la-search search-icon"></i>
+									</span>
+								</div>
+							</div>
+						</form>
+						<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+							<li class="nav-item dropdown">
+								<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="assets/img/profile.jpg"
+									 alt="user-img" width="36" class="img-circle"><span>admin</span></span> </a>
+								<ul class="dropdown-menu dropdown-user">
+									<li>
+										<div class="user-box">
+											<div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
+											<div class="u-text">
+												<h4>admin</h4>
+												<p class="text-muted">管理员</p>
+											</div>
+										</div>
+									</li>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="profile.html"><i class="ti-user"></i>个人信息</a>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="sidebar">
+				<div class="scrollbar-inner sidebar-wrapper">
+					<div class="user">
+						<div class="photo">
+							<img src="assets/img/profile.jpg">
+						</div>
+						<div class="info">
+							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									admin
+									<span class="user-level">管理员</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+								<ul class="nav">
+									<li>
+										<a href="login.html" class="loginOut">
+											<span class="link-collapse">退出登录</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="index.html">
+								<i class="la la-medkit" style="color: blueviolet;"></i>
+								<p>海外疫情总览</p>
+								<span class="badge badge-count xzqz text-danger"></span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="map.html">
+								<i class="la la-maxcdn" style="color: blueviolet;"></i>
+								<p>海外疫情分布图</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="table.html">
+								<i class="la la-area-chart" style="color: blueviolet;"></i>
+								<p>海外疫情详情表</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="today.html">
+								<i class="la la-calendar" style="color: blueviolet;"></i>
+								<p>历史今日</p>
+								<span class="badge badge-count today text-danger"></span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=JEBBRUBFSkBITVJBZEJLXElFTUgKR0tJ" style="text-decoration:none;">
+								<i class="la la-gittip" style="color: deeppink;"></i>
+								<p>意见反馈</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-panel">
+				<div class="content">
+					<div class="container-fluid">
+						<h4 class="page-title">新冠肺炎疫情-详情表</h4>
+						<p>数据来源：<a href="https://news.qq.com/zt2020/page/feiyan.htm#/global">腾讯</a> </p>
+						<div class="row">
+							<div class="col-lg-12 grid-margin stretch-card">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="card-title">海外疫情</h4>
+										<div class="table-responsive">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>
+															国家地区
+														</th>
+														<th>
+															新增确诊
+														</th>
+														<th>
+															累计确诊
+														</th>
+														<th>
+															现有确诊
+														</th>
+														<th>
+															累计死亡
+														</th>
+														<th>
+															累计治愈
+														</th>
+													</tr>
+												</thead>
+												<tbody id="yq_table">
+												</tbody>
+											</table>
+											<div class="container-fluid">
+												<div class="row text-center">
+													<div class="col-12 btn-info">
+														<button id="yq_n" type="button" class="col-12 btn btn-info" data-container="body"
+														 data-toggle="popover" data-placement="top" data-content="没有更多了">
+															更多
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer" style="position: absolute;bottom: 0;width: 100%;">
+					<div class="container-fluid">
+						<div class="copyright mx-auto text-center">
+							<span>Copyright © 2020 <a href="">DeadAndLive</a>. All rights reserved.</span>
+							<div>
+								<span>公安备案号： </span>
+								<strong><a class="text-muted" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52050202001406">52050202001406</a></strong>
+								<span>互联网ICP备案： </span>
+								<strong><a class="text-muted" href="http://www.beian.miit.gov.cn/">黔ICP备20003551号</a></strong>
+							</div>	
+						 </div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+	<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+	<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+	<script src="assets/js/ready.min.js"></script>
+	<script src="assets/js/demo.js"></script>
+	<script src="assets/js/self.js"></script>
+	<script src="assets/js/loginout.js"></script>
+	<script>
+		let loginState = new WebSocket("ws://123.57.19.35:9814/loginStateService");
+		$(document).ready(function() {
+			loginState.onmessage = function(e) {
+				if (e.data != 10) {
+					//未登录重定向到login
+					window.location.replace("login.html");
+				}
+			};
+		});
+	</script>
+</html>
